@@ -6,12 +6,18 @@
 This project is a Retrieval-Augmented Generation (RAG) Chatbot built using AWS Bedrock, Streamlit, and deployed on an EC2 instance. The application allows users to input queries and receive intelligent responses powered by Amazon's foundation models.
 
 The system demonstrates how Generative AI can be integrated into real-world applications using cloud infrastructure.
+
 ### Key Features
 🔹 Interactive chatbot UI using Streamlit
+
 🔹 Integration with AWS Bedrock Runtime
+
 🔹 Uses Amazon Titan Text Models
+
 🔹 Cloud deployment using AWS EC2
+
 🔹 Secure access using IAM Roles (No hardcoded credentials)
+
 🔹 Scalable and production-ready architecture
 
 ### Tech Stack
