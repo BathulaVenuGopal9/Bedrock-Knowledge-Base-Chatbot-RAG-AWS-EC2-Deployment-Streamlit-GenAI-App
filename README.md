@@ -2,11 +2,11 @@
 
 ## RAG Chatbot using AWS Bedrock & Streamlit
 
-📌 Overview
+### Overview
 This project is a Retrieval-Augmented Generation (RAG) Chatbot built using AWS Bedrock, Streamlit, and deployed on an EC2 instance. The application allows users to input queries and receive intelligent responses powered by Amazon's foundation models.
 
 The system demonstrates how Generative AI can be integrated into real-world applications using cloud infrastructure.
-🧠 Key Features
+### Key Features
 🔹 Interactive chatbot UI using Streamlit
 🔹 Integration with AWS Bedrock Runtime
 🔹 Uses Amazon Titan Text Models
@@ -14,7 +14,7 @@ The system demonstrates how Generative AI can be integrated into real-world appl
 🔹 Secure access using IAM Roles (No hardcoded credentials)
 🔹 Scalable and production-ready architecture
 
-🏗️ Tech Stack
+### Tech Stack
 Category
 Tools/Services
 Frontend
@@ -30,14 +30,14 @@ Boto3
 Version Control
 Git & GitHub
 
-📂 Project Structure
+### Project Structure
 rag-bedrock-app/
 │
 ├── app.py               # Main Streamlit application
 ├── requirements.txt     # Dependencies
 ├── README.md            # Project documentation
 
-⚙️ Installation & Setup
+### Installation & Setup
 🔹 1. Clone the Repository
 git clone https://github.com/your-username/rag-bedrock-app.git
 cd rag-bedrock-app
@@ -52,7 +52,7 @@ AmazonS3FullAccess
 🔹 4. Run the Application
 streamlit run app.py
 
-🌐 Deployment on AWS EC2
+### Deployment on AWS EC2
 Steps:
 Launch EC2 Instance (Ubuntu recommended)
 Connect via SSH
@@ -63,44 +63,42 @@ streamlit run app.py --server.port 8502 --server.address 0.0.0.0
 Open browser:
 http://99.79.50.114:8502/
 
-🔐 IAM Role Configuration
+### IAM Role Configuration
 Ensure your EC2 instance has an IAM role with:
 AmazonBedrockFullAccess
 AmazonS3FullAccess
 This avoids the need for access keys inside code.
 
-⚠️ Challenges Faced
+### Challenges Faced
 ❌ Model availability issues across regions
 ❌ Credential errors (NoCredentialsError)
 ❌ Deployment differences between local and EC2
 
-✅ Solutions
+### Solutions
 Used IAM roles instead of credentials
 Verified model availability per region
 Standardized environment between local and EC2
 
-📸 Application Preview
+### Application Preview
 User inputs a question
 Model processes via AWS Bedrock
 Response displayed instantly on UI
 
-🚀 Future Enhancements
+### Future Enhancements
 🔹 Add document-based retrieval (true RAG pipeline)
 🔹 Integrate vector databases (FAISS / OpenSearch)
 🔹 Add chat history & memory
 🔹 Improve UI/UX
 🔹 Add authentication layer
 
-👨‍💻 Author
+## Author
 BATHULA VENU GOPAL
 Intern @ Innomatics Research Labs
 
-🙏 Acknowledgements
+### Acknowledgements
 Special thanks to Innomatics Research Labs for guidance and support throughout this project.
 
-📌 Note
+### Note
 This project is built using AWS Bedrock (Free Tier / Limited Access Models).
 For production-level performance, upgraded model access or subscription may be required.
 
-⭐ If you found this useful
-Give a ⭐ on GitHub and share your feedback!
